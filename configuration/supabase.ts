@@ -1,2 +1,2 @@
-export const SAVE_TO_HISTORY: boolean = true; // Whether to save the chat to the database
-export const HISTORY_TABLE_NAME: string = "[HISTORY TABLE NAME]";
+export const SAVE_TO_HISTORY: boolean = process.env.SAVE_TO_HISTORY === 'true';
+export const HISTORY_TABLE_NAME: string = process.env.HISTORY_TABLE_NAME || "[HISTORY TABLE NAME]";
